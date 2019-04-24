@@ -53,7 +53,7 @@ let preReq = course.preReqs.equipment;
 // Second OSOoption from equipment preReqs
 let secondOption = course.preReqs.equipment.OSOptions[1];
 
-let optToString = course.preReqs.equipment.OSOptions.toString()
+let optToString = course.preReqs.equipment.OSOptions[0] + " or " + course.preReqs.equipment.OSOptions[1];
 
 // Array of students using OSX
 
@@ -62,7 +62,7 @@ let students = [];
 // for (let i = 0; i < course.students.length; i++) {
 // 	if (course.students[i].computer.OS === "OSX") {
 // 		students.push(course.students[i].name)
-// 	}
+// 	
 // }
 
 let arry = course.students.filter(function(obj) {
@@ -73,12 +73,6 @@ let arry = course.students.filter(function(obj) {
 
 console.log(arry)
 
-// console.log(students)
 
-// let billAmount = 100;
-
-// function gratuity(billTotal) {
-// 	return 
-// }
 
 
